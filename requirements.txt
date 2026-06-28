@@ -352,6 +352,10 @@ jinja2==3.1.6 \
     #   jupyterlab
     #   jupyterlab-server
     #   nbconvert
+joblib==1.5.3 \
+    --hash=sha256:5fc3c5039fc5ca8c0276333a188bbd59d6b7ab37fe6632daa76bc7f9ec18e713 \
+    --hash=sha256:8561a3269e6801106863fd0d6d84bb737be9e7631e33aaed3fb9ce5953688da3
+    # via scikit-learn
 json5==0.15.0 \
     --hash=sha256:56636a30c0e8a4665fe2179c0212f32eae3796dea89ea6f649b9436ecdb39618 \
     --hash=sha256:7424d1f1eb1d56da6e3d70643f53619862b4ce81440bdb8ecfd6f875e5ba4a71
@@ -575,7 +579,9 @@ matplotlib==3.11.0 \
     --hash=sha256:d9695457a467ff86d23f35037a43deb6f1134dd6d3e2ac8ce1e2087cff09ffb9 \
     --hash=sha256:dfabef0230d0697aa0d717385194dd41162e00207a68bf4abf94c2bf4c27dca0 \
     --hash=sha256:e6b3e64dea5062c570f04358e2711859f3531b459f29516274fbad889079e4f3
-    # via dsm050-midterm
+    # via
+    #   dsm050-midterm
+    #   seaborn
 matplotlib-inline==0.2.2 \
     --hash=sha256:3c821cf1c209f59fb2d2d64abbf5b23b67bcb2210d663f9918dd851c6da1fcf6 \
     --hash=sha256:72f3fe8fce36b70d4a5b612f899090cd0401deddc4ea90e1572b9f4bfb058c79
@@ -586,6 +592,10 @@ mistune==3.3.2 \
     --hash=sha256:a678a56387d487db7368ede4647cb2ba1deff22ce61f92343e4ebe0ddfce4f2d \
     --hash=sha256:e12ee4f1e74336e91aa1141e35f913b337c40bdf7c0cc49f21fb853a27e8b62f
     # via nbconvert
+narwhals==2.22.1 \
+    --hash=sha256:60567d774edf77db53906f89d9fbd164e66e56d66d388e1e6990f17ac33cfb53 \
+    --hash=sha256:d62920805a0a43b7ff8b54b0c0d3142d796f8a9301836ada37e573d6a33cbcd9
+    # via scikit-learn
 nbclient==0.11.0 \
     --hash=sha256:04a134a5b087f2c5887f228aca155db50169b8cd9334dee6942c8e927e56081a \
     --hash=sha256:ef7fa0d59d6e1d41103933d8a445a18d5de860ca6b613b87b8574accdb3c2895
@@ -650,6 +660,9 @@ numpy==2.5.0 \
     #   matplotlib
     #   pandas
     #   pyogrio
+    #   scikit-learn
+    #   scipy
+    #   seaborn
     #   shapely
 packaging==26.2 \
     --hash=sha256:5fc45236b9446107ff2415ce77c807cee2862cb6fac22b8a73826d0693b0980e \
@@ -701,6 +714,7 @@ pandas==3.0.3 \
     #   country-converter
     #   dsm050-midterm
     #   geopandas
+    #   seaborn
 pandocfilters==1.5.1 \
     --hash=sha256:002b4a555ee4ebc03f8b66307e287fa492e4a77b4ea14d3f934328297bb4939e \
     --hash=sha256:93be382804a9cdb0a7267585f157e5d1731bbe5545a85b268d6f5fe6232de2bc
@@ -1100,6 +1114,64 @@ rpds-py==2026.5.1 \
     # via
     #   jsonschema
     #   referencing
+scikit-learn==1.9.0 \
+    --hash=sha256:051075bda8b7aab87b1906ab3d4740a1e1224a19d7b3781a576736edc94e76aa \
+    --hash=sha256:147e9329ef0e39f75d4cffa02b2aa48d827832684926cd5210d9a2cb5c57246b \
+    --hash=sha256:1b944b6db288f6b926e3650026ddafb988929de95d11fc2cc5fa117773c9ba42 \
+    --hash=sha256:1fea2cc5677ab49d6f5bade978c866da44957b712d92e9635e8b4f723013c3cb \
+    --hash=sha256:24360002ae845e7866522b0a5bbf690802e7bc388cac8663502e78aa98598aa2 \
+    --hash=sha256:38c3dcb9a1ffb85505ec53d54c7b4aea0cff70050425a7760c2af661ac85df05 \
+    --hash=sha256:4ccacf04ca5f4b492158a5f28afe0ace43f81b2571e4b9a66d34848b46128949 \
+    --hash=sha256:5162ad10a418c8a282dde04c9aa06965de3e9a65f33c1440c0ae69bb1a09d913 \
+    --hash=sha256:5808d98f15c6bf6d9d96d2348c1997392a5888ce7097e664105f930c4bca1277 \
+    --hash=sha256:5b934c45c252844a91d69fda3a34cff5e7307e1db10d77cb10a3980312c74713 \
+    --hash=sha256:5bad8f8b9950321b54c965fdcbac6c6c55e79e16646b49977bcf3668d3870a1a \
+    --hash=sha256:64fa347efc1c839c487433e40c5144d38c336e8a2b59c81aa8660373945c2673 \
+    --hash=sha256:78fc56eafd4edb9575d2d8950d1dd152061abb573341a1cb7e099fc40f6c6666 \
+    --hash=sha256:80746d63bd4b6eaca54d36fe5feaf4d28bb38dc6f9470f81c7cad7c40155f119 \
+    --hash=sha256:8833266989d3a5110178a9fae30783675460724d0e1efb13b14901d2c660c557 \
+    --hash=sha256:9656acd4e93f74e0b66c8a36c88830a99252dfa900044d36bc2212ae89a47162 \
+    --hash=sha256:d77f54c017633791bc0225a43e2f8d03745fdcfe4880268fcc4df15f505dec2e \
+    --hash=sha256:da76d09304a4706db7cc1e3ebaa3b6b98a67365cc11d2996c4f1e58ba47df714 \
+    --hash=sha256:ee1a8db2c18c08e34c7412d4b10be1cac214cd4ea7dc9715a6a327eb49a37c96
+    # via dsm050-midterm
+scipy==1.18.0 \
+    --hash=sha256:09143f676d157d9f546d663504ef9c1becb819824f1afc018814176411942446 \
+    --hash=sha256:0d13bca67c096d89fb95ced0d8921807300fce0275643aef9533cc63a0773468 \
+    --hash=sha256:18e9575f1569b2c54174e6159d32942e03731177f63dce7975f0a0c88d102f5b \
+    --hash=sha256:1a4441f15d620578772a49e5ab48c0ee1f7a0220e387110283062729136b2553 \
+    --hash=sha256:1ad44305cfa24b1ba5803cbbebf033590ccbac1aa5d612d727b785325ab408b0 \
+    --hash=sha256:1afac4a847207c7ff8efd321734a50b06d0280b3b2a2c0fc2f413101747ad7c7 \
+    --hash=sha256:2d8bbdc6c817f5b4006a54d799d4f5bab6f910193cbb9a1ff310833d4d270f61 \
+    --hash=sha256:2ef3abc54a4ffc53765374b0d5728532dfdd2585ed23f6b11c206a1f0b1b9af8 \
+    --hash=sha256:368e0a705903c466aa5f08eefb39e6b1b6b2d659e7352a31fd9e2438365be0f8 \
+    --hash=sha256:3f1ac564d3bf6c03d861d2cd87a1bea0da2887136f7fb1bf519c05a8971452d6 \
+    --hash=sha256:40395a5fcd1abee49a5c7aaa98c29db393eedc835138560a588c47ec16156690 \
+    --hash=sha256:4c256ee70c0d1a8a2ace807e199ccd4e3f57037433842abb3fb36bc17eaa9578 \
+    --hash=sha256:56abf29a7c067dde59be8b9a22d606a4ea1b2f2a4b756d9d903c62818f5dacce \
+    --hash=sha256:5aba46108853ddfc77906b6557aac839d2b52e900c1d72a1180adaaab58d265f \
+    --hash=sha256:5efe260f69417b97ddae455bfb5a95e8359f7f66ad7fa9522a60feb66f169520 \
+    --hash=sha256:67b2ad2ad54c72ca6d04975a9b2df8c3638c34ddd5b28738e94fc2b57929d378 \
+    --hash=sha256:68363b7eaacd8b5dd426df56d782cc156468ac79a127a1b87ca597d6e2e82197 \
+    --hash=sha256:6aa94e78ec192a30063a5e72e561c28af769dc311190b24fe91774eff1969709 \
+    --hash=sha256:7a7f3b01647384dbc3a711e8c6778e0aabbe93959249fef5c7393396bcac0867 \
+    --hash=sha256:7c7a51b33ce387193c97f228320cf8e87361daa1bba750638677729598b3e677 \
+    --hash=sha256:84031d7b052a54fae2f8632e0ec802073d385476eb9a63079bce6e23ef9283d4 \
+    --hash=sha256:8ca01e8ae69f1b18e9a58d91afead31be3cef0dd905a10249dac559ee15460a0 \
+    --hash=sha256:945c1761b93f38d7f99ae81ae80c63e621471608c7eeead563f6df025585cd58 \
+    --hash=sha256:9aac6192fac56bf2ca534389d24623f07b39ff83317d58287285e7fbd622ff76 \
+    --hash=sha256:a46f9273dbd0eb1cefba61c9b8648b4dfe3cbc14a080176f9a73e44b8336dc7f \
+    --hash=sha256:b6f758e35f12757b5d95c00bc6de2438e229c2664b7a92e96f205959d9f2dfa4 \
+    --hash=sha256:c5557d8be5da8e41353fcd4d21491fdbab83b062fc579e94dc09a7c8ab4f669b \
+    --hash=sha256:c5dbddf60e58c2312316d097271a8e73d40eaf2eabfa4d95ed7d3695bbf2ce7b \
+    --hash=sha256:e40baea28ae7f5475c779741e2d90b1247c78531207b49c7030e698ff81cee3f \
+    --hash=sha256:f2a6af57bd9e4a75d70e4117e78a1bbee84f79ae3fbb6d0111005d6ebcc4cb8d \
+    --hash=sha256:f351e0dd702687d12a402b867a1b4146a256923e1c38317cbc472f6372b94707
+    # via scikit-learn
+seaborn==0.13.2 \
+    --hash=sha256:636f8336facf092165e27924f223d3c62ca560b1f2bb5dff7ab7fad265361987 \
+    --hash=sha256:93e60a40988f4d65e9f4885df477e2fdaff6b73a9ded434c1ab356dd57eefff7
+    # via dsm050-midterm
 send2trash==2.1.0 \
     --hash=sha256:0da2f112e6d6bb22de6aa6daa7e144831a4febf2a87261451c4ad849fe9a873c \
     --hash=sha256:1c72b39f09457db3c05ce1d19158c2cbef4c32b8bedd02c155e49282b7ea7459
@@ -1159,6 +1231,10 @@ terminado==0.18.1 \
     # via
     #   jupyter-server
     #   jupyter-server-terminals
+threadpoolctl==3.6.0 \
+    --hash=sha256:43a0b8fd5a2928500110039e43a5eed8480b918967083ea48dc3ab9f13c4a7fb \
+    --hash=sha256:8ab8b4aa3491d812b623328249fab5302a68d2d71745c8a4c719a2fcaba9f44e
+    # via scikit-learn
 tinycss2==1.5.1 \
     --hash=sha256:3415ba0f5839c062696996998176c4a3751d18b7edaaeeb658c9ce21ec150661 \
     --hash=sha256:d339d2b616ba90ccce58da8495a78f46e55d4d25f9fd71dfd526f07e7d53f957
